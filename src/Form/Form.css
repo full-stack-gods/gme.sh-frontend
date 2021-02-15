@@ -1,0 +1,35 @@
+#form {
+    position: relative;
+    left: 25vw;
+    width: 50vw;
+}
+
+.submitButton {
+    border: 2px solid black;
+    outline: none;
+    background: orange;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+}
+
+.submitButton img {
+    width: 60px;
+}
+
+.animation {
+    background: transparent;
+    border: 2px solid transparent;
+    offset-path: path("M136,344 q-1,-119 27,-209 q34,-106 190,-97 q83,25 96,111 q29,109 -63,231 q-52,76 -132,78 q-169,-12 -240,-130");
+    animation: explodeRocketAnimation 3s linear 1;
+}
+
+@keyframes explodeRocketAnimation {
+    0% {
+        offset-distance: 0%;
+    }
+
+    100% {
+        offset-distance: 100%;
+    }
+}
