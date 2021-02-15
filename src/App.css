@@ -1,0 +1,17 @@
+.App {
+  text-align: center;
+}
+
+.App .shortHeading {
+  margin: 0;
+  height: 25vh;
+  line-height: 25vh;
+
+  font-family: cursive;
+  font-size: 96px;
+  color: rgb(230, 25, 25);
+}
+
+.App .shortHeading .blue {
+  color: rgb(25, 25, 230);
+}
