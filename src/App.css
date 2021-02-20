@@ -1,17 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root {
+  --primary: #ffff00;
+}
+
 .App {
   text-align: center;
 }
 
 .App .shortHeading {
-  margin: 0;
-  height: 25vh;
-  line-height: 25vh;
-
-  font-family: cursive;
-  font-size: 96px;
-  color: rgb(230, 25, 25);
+  font-family: "Roboto", sans-serif;
+  color: var(--primary);
+  font-size: 120px;
+  letter-spacing: 0.3rem;
 }
 
-.App .shortHeading .blue {
-  color: rgb(25, 25, 230);
+.App .ShortenerText {
+  position: relative;
+  color: var(--bg);
+  font-size: 84px;
+  text-shadow: 
+    -2px -2px 0 var(--primary),
+    2px -2px 0 var(--primary),
+    2px 2px 0 var(--primary),
+    -2px -2px 0 var(--primary)
 }
+
+.App .ShortenerText .shadow {
+  position: absolute;
+  left: 6px;
+  bottom: 6px;
+  text-shadow: 
+  -1px -1px 0 white,
+  1px -1px 0 white,
+  1px 1px 0 white,
+  -1px -1px 0 white
+}
+

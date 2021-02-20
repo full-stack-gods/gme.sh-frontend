@@ -5,7 +5,11 @@ function App() {
   return (
     <div className="App">
       <header>
-        <h1 className="shortHeading">$<span className="blue">GME</span>Short</h1>
+        <h1 className="shortHeading">GME
+          <span className="ShortenerText">Shortener
+            <span className="shadow">Shortener</span>
+          </span>
+        </h1>
       </header>
       <Form />
     </div>

@@ -35,15 +35,11 @@ function Form() {
     }
 
     return (
-        <div>
+        <div className="Form">
             <form onSubmit={handleSubmit} id="form">
-                <div>
+                <div className="centralRow">
                     <input type="text" name="url" placeholder="Url" />
                     <button type="submit" className="submitButton"><img src={Rocket} /></button>
-                </div>
-                <div>
-                <input type="text" name="Alias" placeholder="Alias" />
-                <Select defaultValue={expirationOptions[0]} options={expirationOptions} />
                 </div>
                 <p>{shortenedLinkData != null ? shortenedLinkData.Message : "-"}</p>
             </form>

@@ -1,3 +1,7 @@
+:root {
+  --bg: #272524;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -6,6 +10,6 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  background: rgb(39, 37, 36);
+  background: var(--bg);
   min-height: 100vh;
 }
