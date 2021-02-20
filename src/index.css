@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 :root {
   --bg: #272524;
+  --primary: #ffff00;
 }
 
 body {

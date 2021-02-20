@@ -1,14 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-
-:root {
-  --primary: #ffff00;
-}
-
 .App {
   text-align: center;
 }
 
 .App .shortHeading {
+  margin: 0;
+  padding-top: calc(50vh - 240px);
+  padding-bottom: 40px;
   font-family: "Roboto", sans-serif;
   color: var(--primary);
   font-size: 120px;

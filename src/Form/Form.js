@@ -1,6 +1,6 @@
-import { useState } from "react"
+import { useState } from "react";
 import Select from "react-select";
-import "./Form.css"
+import "./Form.css";
 
 import Rocket from "../res/images/rocketExample.png"
 
@@ -12,7 +12,7 @@ const expirationOptions = [
 
 function Form() {
 
-    const [shortenedLinkData, setShortenedLinkData] = useState(null)
+    const [shortenedLinkData, setShortenedLinkData] = useState(null);
 
     const handleSubmit = event => {
         event.preventDefault();
@@ -38,7 +38,7 @@ function Form() {
         <div className="Form">
             <form onSubmit={handleSubmit} id="form">
                 <div className="centralRow">
-                    <input type="text" name="url" placeholder="Url" />
+                    <input type="text" name="url" placeholder="Url" id="urlInput" />
                     <button type="submit" className="submitButton"><img src={Rocket} /></button>
                 </div>
                 <p>{shortenedLinkData != null ? shortenedLinkData.Message : "-"}</p>
