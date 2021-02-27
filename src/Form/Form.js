@@ -38,7 +38,13 @@ function Form() {
         <div className="Form">
             <form onSubmit={handleSubmit} id="form">
                 <div className="centralRow">
-                    <input type="text" name="url" placeholder="Url" id="urlInput" />
+                    <div className="cube-1">
+                        <input className="side front" type="text" name="url" placeholder="Url" id="urlInput" />
+                        <div className="side left"></div>
+                        <div className="side right"></div>
+                        <div className="side top"></div>
+                        <div className="side bottom"></div>
+                    </div>
                     <button type="submit" className="submitButton"><img src={Rocket} /></button>
                 </div>
                 <p>{shortenedLinkData != null ? shortenedLinkData.Message : "-"}</p>

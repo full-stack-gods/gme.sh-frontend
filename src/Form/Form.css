@@ -37,20 +37,94 @@
     width: 40px;
 }
 
-#urlInput {
+.cube-1 {
     box-sizing: border-box;
+    position: relative;
     height: 80px;
     width: 640px;
-    background: var(--bg);
+    background: none;
     margin-right: 40px;
+    /* box-shadow: 3px -3px 0px 5px var(--primary); */    
+    transform-style: preserve-3d;
+    animation: lol 10s infinite linear;
+}
+
+@keyframes lol {
+    0% {
+        transform: rotate3d(1,1,1,0deg);
+    }
+
+    33% {
+        transform: rotate3d(0,1,1,90deg);
+    }
+
+    66% {
+        transform: rotate3d(1,0,1,-90deg);
+    }
+
+    100% {
+        transform: rotate3d(1,1,1,0deg);
+    }
+}
+
+#urlInput {
+    box-sizing: border-box;
+    display: block;
+    height: 100%;
+    width: 100%;
     padding: 10px;
-    border: 0;
-    outline: none;
-    box-shadow: 3px -3px 0px 5px var(--primary);
     caret-color: white;
     font-size: 20px;
-    color: rgb(163, 163, 163);
+    color: rgb(231, 231, 231);
+    border: 2px solid var(--primary);
+    outline: none;
+    background: var(--bg);
 }
+
+#urlInput::placeholder {
+    color: rgb(231, 231, 231);
+}
+
+.cube-1 .side {
+    position: absolute;
+    width: 320px; height: 80px;
+    /* height: 100%;
+    width: 100%; */
+}
+
+.cube-1 .side.left {
+    left: 160px;
+    background: #FF00FFAA;
+    transform: rotateY(-90deg) translateZ(320px);
+}
+
+.cube-1 .side.right {
+    left: 160px;
+    background: #00FFFFAA;
+    transform: rotateY(90deg) translateZ(320px);
+}
+
+.cube-1 .side.top {
+    top: 320px;
+    height: 320px;
+    width: 640px;
+    background: #ff0077aa;
+    transform: rotateX(90deg) translateZ(480px);
+}
+
+.cube-1 .side.bottom {
+    top: 320px;
+    height: 320px;
+    width: 640px;
+    background: #003cffaa;
+    transform: rotateX(-90deg) translateZ(-400px);
+}
+.cube-1 .side.front {
+    background: #c8ff0000;
+    width: 640px;
+    transform: rotateY(-0deg) translateZ(160px);
+}
+
 
 .animation {
     background: transparent;
